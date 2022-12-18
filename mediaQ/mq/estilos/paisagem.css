@@ -1,16 +1,4 @@
-*{
-    padding: 10px;
-    margin: 10px;
-    box-sizing: border-box;
-}
+
 body{
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 1.5em;
-    line-height: 1.5em;
-}
-nav{
-    display: none;
-}
-article::after{
-    content: 'Este artigo foi impresso.';
+    background: url(../imagens/cev-landscap.jpg);
 }
