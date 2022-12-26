@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/mq.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>PROJETO</title>
+</head>
+<body onresize="tamanho()">
+    <header>
+        <h1>nome do site</h1>
+        <div id="linha"></div>
+        <i class="material-symbols-outlined" id="burger" onclick="clickMenu()">menu</i>
+        <menu id="menu">
+            <ul id="ul">
+                <li><a href="">Opção 1</a></li>
+                <li><a href="">Opção 2</a></li>
+                <li><a href="">Opção 3</a></li>
+                <li><a href="">Opção 4</a></li>
+                <li><a href="">Opção 5</a></li>
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <h1>título</h1>
+        <img src="imagens/icon-pc.png" alt="" id="pc">
+        <img src="imagens/icon-phone.png" alt=""id="phone">
+        <img src="imagens/icon-print.png" alt=""id="print">
+        <img src="imagens/icon-tablet.png" alt=""id="tablet">
+        <img src="imagens/icon-tv.png" alt=""id="tv">
+         <article>
+            <h2>CONTEÚDO</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati, quaerat expedita excepturi, dolores, sint inventore distinctio voluptatibus nemo impedit dolorem dolore molestiae animi? Labore provident harum, voluptatum inventore deleniti illo?</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati, quaerat expedita excepturi, dolores, sint inventore distinctio voluptatibus nemo impedit dolorem dolore molestiae animi? Labore provident harum, voluptatum inventore deleniti illo?</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati, quaerat expedita excepturi, dolores, sint inventore distinctio voluptatibus nemo impedit dolorem dolore molestiae animi? Labore provident harum, voluptatum inventore deleniti illo?</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati, quaerat expedita excepturi, dolores, sint inventore distinctio voluptatibus nemo impedit dolorem dolore molestiae animi? Labore provident harum, voluptatum inventore deleniti illo?</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati, quaerat expedita excepturi, dolores, sint inventore distinctio voluptatibus nemo impedit dolorem dolore molestiae animi? Labore provident harum, voluptatum inventore deleniti illo?</p>
+         </article>
+    </main>
+    <footer></footer>
+    <script>
+        function clickMenu(){
+            if (menu.style.display == "block"){
+                menu.style.display = "none";
+                burger.style.background = "";
+                burger.style.color = "";
+                ul.style.padding = "";
+            }
+            else{
+                menu.style.display = "block";
+                burger.style.background = "rgba(0, 0, 0, 0.712)";
+                burger.style.color = "white";
+                ul.style.padding = "10px 0";
+            }
+        }
+        function tamanho(){
+            if (window.innerWidth >= 768){
+                menu.style.display = "block";
+                linha.style.display = "block"
+            }
+            else{
+                menu.style.display = "none";
+                linha.style.display ="none"
+            }
+        }
+    </script>
+</body>
+</html>
