@@ -44,12 +44,12 @@ header h1{
 menu{
     display: none;
     transition: 2s;
+    padding: 10px 100px 0 100px;
 }
-ul{
-    list-style-type: none;
-    padding: 10px;
+nav:last-of-type{
+    margin-left: auto;
 }
-ul li a{
+a{
     display: block;
     text-decoration: none;
     padding: 15px;
@@ -57,7 +57,7 @@ ul li a{
     text-align: center;
     transition: 0.3s;
 }
-ul li a:hover{
+a:hover{
     background: rgba(0, 0, 0, 0.712);
     color: white;
 }
@@ -75,9 +75,6 @@ h1, h2{
     color: rgba(0, 0, 0, 0.712);
     position: relative;
 }
-h2{
-    padding-top: 20px;
-}
 p{
     margin: 20px 0;
     text-align: justify;
@@ -87,7 +84,11 @@ img{
     display: block;
     margin: 0 auto;
 }
-h2::before{
+article{
+    position: relative;
+    padding-top: 20px;
+}
+article::before{
     content: '';
     position: absolute;
     top: 0;

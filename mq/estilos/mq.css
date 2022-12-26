@@ -22,8 +22,8 @@
     #print{display: block;} 
     #tablet{display: none;} 
     #burger{display: none;}
-    menu{display: block;}
-    menu ul li{display: inline-block;}
+    menu{display: flex;}
+    menu a{display: inline-block;}
 }
 @media screen and (min-width: 768px) and (max-width: 992px) {
     body{
@@ -39,8 +39,11 @@
     #print{display: none;} 
     #tablet{display: none;} 
     #burger{display: none;}
-    menu{display: block;}
-    menu ul li{display: inline-block;}
+    menu{
+        display: flex;
+        padding: 0 50px;
+    }
+    menu a{display: inline-block;}
 }
 @media screen and (min-width: 992px) and (max-width: 1200px) {
     body{
@@ -56,8 +59,11 @@
     #print{display: none;} 
     #tablet{display: none;} 
     #burger{display: none;}
-    menu{display: block;}
-    menu ul li{display: inline-block;}
+    menu{
+        display: flex;
+        padding: 0 100px;
+    }
+    menu a{display: inline-block;}
 }
 @media screen and (min-width: 1200px) {
     body{
@@ -74,6 +80,9 @@
     #print{display: none;} 
     #tablet{display: none;}
     #burger{display: none;}
-    menu{display: block;}
-    menu ul li{display: inline-block;}
+    menu{
+        display: flex;
+        padding: 0 100px;
+    }
+    menu a{display: inline-block;}
 }
